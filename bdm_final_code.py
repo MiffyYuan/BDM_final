@@ -150,4 +150,4 @@ if __name__=='__main__':
 
 
     pivotDF = result.groupBy("cbg_fips").pivot("time").mean("avg_dis").sort("cbg_fips", ascending=True)
-    pivotDF.saveAsTextFile('BDM_Final_wy2191')
+    pivotDF..write.csv('BDM_Final_wy2191.csv')
